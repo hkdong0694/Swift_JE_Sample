@@ -20,14 +20,32 @@ class ViewController: UIViewController {
         // 정보를 이용하여 참조
         // let uvc = self.storyboard!.instantiateViewController(identifier: "SecondVC")
     
-        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let uvc = storyboard.instantiateViewController(withIdentifier: "SecondVC")
+//        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+//        let uvc = storyboard.instantiateViewController(withIdentifier: "SecondVC")
+//
+//
+//        // 화면 전환할 때의 애니메이션 탕
+//        uvc.modalTransitionStyle = UIModalTransitionStyle.coverVertical
+//
+//        // 인자값으로 뷰 컨트롤러 인스턴스를 넣고 프레젠트 메소드 호출
+//        self.present(uvc, animated: true)
+    
+        // 옵셔널 체인, 옵셔널 바인딩
         
-
-        // 화면 전환할 때의 애니메이션 탕
-        uvc.modalTransitionStyle = UIModalTransitionStyle.coverVertical
+//        if let uvc = self.storyboard?.instantiateViewController(withIdentifier: "SecondVC") {
+//            uvc.modalTransitionStyle = UIModalTransitionStyle.flipHorizontal
+//
+//            self.present(uvc, animated: true)
+//
+//        }
         
-        // 인자값으로 뷰 컨트롤러 인스턴스를 넣고 프레젠트 메소드 호출
+        // guard 조건문
+        guard let uvc = self.storyboard?.instantiateViewController(withIdentifier: "SecondVC") else {
+            return
+        }
+        
+        uvc.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        
         self.present(uvc, animated: true)
         
     }
