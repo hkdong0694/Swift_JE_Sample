@@ -18,3 +18,5 @@
 - [SubmitValue](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/SubmitValue/SubmitValue) : 화면 전환하면서 값을 전달하는 Sample Project
 - [SubmitValue-Back](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/SubmitValue_Back/SubmitValue_Back) : 이전 화면으로 값 전달하기 Sample Project
 - [SubmitValue-AppDelegate](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/SubmitValue-AppDelegate/SubmitValue-AppDelegate) : 저장소를 사용하여 값을 주고 받는 Sample Project
+
+## Chapter 06 - 사용자에게 메시지를 전달하는 방법
