@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="77w-hH-KNZ">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Setting-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SubmitValue" customModuleProvider="target" sceneMemberID="viewController">
@@ -71,29 +71,29 @@
                                     <action selector="onStepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="dZs-uG-m0F"/>
                                 </connections>
                             </stepper>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Iz-UF-8P3">
-                                <rect key="frame" x="171" y="471" width="49" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Submit"/>
-                                <connections>
-                                    <action selector="onSubmit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="32O-fO-brl"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Setting" id="8id-29-5dK">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="N0C-Zg-dGd">
+                            <connections>
+                                <action selector="onPerformSwgue:" destination="BYZ-38-t0r" id="oas-vG-ZhB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="email" destination="NkS-0L-Lww" id="uuj-o2-I5H"/>
                         <outlet property="interval" destination="VGd-im-Q5t" id="xmN-wx-9F5"/>
                         <outlet property="intervalText" destination="8E4-Nf-37h" id="9Pc-Cx-PhU"/>
                         <outlet property="isUpdate" destination="zVb-yp-KhK" id="znh-la-Qlg"/>
                         <outlet property="isUpdateText" destination="i1Y-jK-web" id="BCI-Bj-RdF"/>
+                        <segue destination="OtV-PO-gpo" kind="show" identifier="ManualSubmit" id="J9A-vn-rrY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-75.384615384615387" y="115.87677725118483"/>
+            <point key="canvasLocation" x="853.84615384615381" y="115.87677725118483"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="VIN-pP-bpI">
@@ -157,6 +157,7 @@
                         <viewLayoutGuide key="safeArea" id="rHb-To-Bnd"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="NF5-IY-CHA"/>
                     <connections>
                         <outlet property="resultEmail" destination="vJR-ao-9gn" id="akx-rW-LSA"/>
                         <outlet property="resultInterval" destination="PWa-mV-uGQ" id="XNn-rE-euE"/>
@@ -165,7 +166,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xpS-c0-rby" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="633.84615384615381" y="115.87677725118483"/>
+            <point key="canvasLocation" x="1563.0769230769231" y="115.87677725118483"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="IYv-Mm-ZsJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="77w-hH-KNZ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gfq-K4-vXE">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="q0x-rw-0Ef"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ahA-RY-Dcq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-75.384615384615387" y="115.87677725118483"/>
         </scene>
     </scenes>
     <resources>

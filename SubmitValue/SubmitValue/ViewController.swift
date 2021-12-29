@@ -59,6 +59,25 @@ class ViewController: UIViewController {
         self.intervalText.text = "\(value)분 마다"
     }
     
+    @IBAction func onPerformSwgue(_ sender: Any) {
+        self.performSegue(withIdentifier: "ManualSubmit", sender: self)
+    }
+    
+    // 세그웨이를 통해 화면을 전달하기 전에 전처리 메서드를 통해 데이터 값을 저장한다..!!
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let dest = segue.destination
+        
+        guard let uvc = dest as? ResultViewController else {
+            return
+        }
+        
+        uvc.paramEmail = self.email.text!
+        uvc.paramUpdate = self.isUpdate.isOn
+        uvc.paramInterval = self.interval.value
+        
+        
+    }
+    
     // 화면 전환 및 데이터 전달
     @IBAction func onSubmit(_ sender: Any) {
         
@@ -72,7 +91,8 @@ class ViewController: UIViewController {
         uvc.paramUpdate = self.isUpdate.isOn // 자동갱신 여부
         uvc.paramInterval = self.interval.value // 갱신 주기
         // 화면 이동
-        self.present(uvc, animated: true)
+        // self.present(uvc, animated: true)
+        self.navigationController?.pushViewController(uvc, animated: true)
     }
 }
 
