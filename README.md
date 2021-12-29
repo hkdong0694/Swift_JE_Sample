@@ -16,4 +16,5 @@
 
 ## Chapter 05 - 다른 뷰 컨트롤러와 데이터 주고 받기
 - [SubmitValue](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/SubmitValue/SubmitValue) : NavigationController, Segue 방식으로 화면 전화 후 데이터를 주고 받는 Sample Project
+- [SubmitValue-Back](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/SubmitValue_Back/SubmitValue_Back) : 이전 화면으로 값 전달하기 Sample Project
 
