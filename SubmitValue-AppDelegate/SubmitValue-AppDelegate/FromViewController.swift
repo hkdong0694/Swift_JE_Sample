@@ -20,25 +20,19 @@ class FromViewController : UIViewController {
     }
     
     @IBAction func onSubmit2(_ sender: Any) {
-        // presentingViewController 속성을 통해 이전 화면 객체를 읽어온 다음, viewController 타입으로 캐스팅한다.
-        // let preVC = self.presentingViewController
-        //
-        // guard let vc = preVC as? ViewController else {
-        //     return
-        // }
-        //
-        // vc.paramEmail = self.email2.text
-        // vc.paramUpdate = self.isUpdate2.isOn
-        // vc.paramInterval = self.interval2.value
-        //
-        // self.dismiss(animated: true)
         
-        guard let ad = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-        ad.paramEmail = self.email2.text
-        ad.paramUpdate = self.isUpdate2.isOn
-        ad.paramInterval = self.interval2.value
+        let ud = UserDefaults.standard
+        
+        ud.set(self.email2.text, forKey: "email")
+        ud.set(self.isUpdate2.isOn, forKey: "isUpdate")
+        ud.set(self.interval2.value, forKey: "interval")
+        
+//        guard let ad = UIApplication.shared.delegate as? AppDelegate else {
+//            return
+//        }
+//        ad.paramEmail = self.email2.text
+//        ad.paramUpdate = self.isUpdate2.isOn
+//        ad.paramInterval = self.interval2.value
         
         self.presentingViewController?.dismiss(animated: true, completion: nil)
 

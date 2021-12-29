@@ -31,19 +31,21 @@ class ViewController: UIViewController {
     // 뷰 컨트롤러의 뷰가 화면에 표시될 때마다 실행되는 메서드 ( onResume() )
     override func viewWillAppear(_ animated: Bool) {
         
-        guard let ad = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
+        let ud = UserDefaults.standard
         
-        if let email = ad.paramEmail {
+        // 옵셔널 해제 ( guard 를 안쓰는 것은 해당 메서드가 종료되어선 안되기때문에 if 를 써서
+        // 옵셔널을 해제 시켜줘야 한다. )
+        if let email = ud.string(forKey: "email") {
             resultEmail2.text = email
         }
-        if let update = ad.paramUpdate {
-            resultUpdate2.text = update == true ? "자동갱신" : "자동갱신안함"
-        }
-        if let interval = ad.paramInterval {
-            resultInterval2.text = "\(Int(interval))분마다"
-        }
+        
+        let yodate = ud.bool(forKey: "isUpdate")
+        resultUpdate2.text = (yodate == true ? "자동갱신" : "자동갱신안함")
+        
+        
+        let interval = ud.double(forKey: "interval")
+        resultInterval2.text = "\(Int(interval))분마다"
+        
         
     }
 
