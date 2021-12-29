@@ -8,7 +8,8 @@
 ## Chapter 04 - 화면 전환
 - [Scene-Trans01](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/Scene_Trans01/Scene_Trans01) : present , dismiss 메소드를 이용한 화면 전환 Sample Project
 - [Scene-Trans02](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/Scene_Trans02/Scene_Trans02) : NavigationController를 이용한 화면 전환 Sample Project
-- [Scene-ActionSegue](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/Scene_ActionSegue/Scene_ActionSegue) : 액션 세그웨이를 총한 화면 전환 Sample Project
-- [Scene-ManualSegue](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/Scene_ManualSegue/Scene_ManualSegue) : 메뉴얼 세그웨이를 총한 화면 전환 Sample Project
+- [Scene-ActionSegue](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/Scene_ActionSegue/Scene_ActionSegue) : 액션 세그웨이를 통한 화면 전환 Sample Project
+- [Scene-ManualSegue](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/Scene_ManualSegue/Scene_ManualSegue) : 메뉴얼 세그웨이를 통한 화면 전환 Sample Project
+- [Scene-UnwindSegue](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/Scene_UnwindSegue/Scene_UnwindSegue) : Unwind를 이용하여 화면 전환 한 후, 복귀 하는 Sample Project
 
 
