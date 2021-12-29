@@ -15,3 +15,5 @@
 - [Scene-CustomSegue](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/Scene_CustomSegue/Scene_CustomSegue) : Custom Segue 를 통하여 화면 전환 Sample Project
 
 ## Chapter 05 - 다른 뷰 컨트롤러와 데이터 주고 받기
+- [SubmitValue](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/SubmitValue/SubmitValue) : NavigationController, Segue 방식으로 화면 전화 후 데이터를 주고 받는 Sample Project
+
