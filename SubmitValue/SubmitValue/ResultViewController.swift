@@ -28,6 +28,10 @@ class ResultViewController : UIViewController {
         self.resultInterval.text = "\(Int(self.paramInterval))분 마다 갱신"
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        NSLog("okok22")
+    }
+    
     @IBAction func onBack(_ sender: Any) {
         self.dismiss(animated: true)
     }

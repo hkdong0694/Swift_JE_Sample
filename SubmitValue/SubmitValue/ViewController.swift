@@ -30,6 +30,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        NSLog("okok")
+    }
 
     // 자동 갱신 여부가 바뀔 때마다 호출되는 메서드
     @IBAction func onSwitch(_ sender: UISwitch) {
