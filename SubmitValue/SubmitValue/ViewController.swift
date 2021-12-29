@@ -31,6 +31,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    // 자동 갱신 여부가 바뀔 때마다 호출되는 메서드
     @IBAction func onSwitch(_ sender: UISwitch) {
         
         // 만약 sender 의 타입이 Any 일 경우
@@ -46,6 +47,7 @@ class ViewController: UIViewController {
         }
     }
     
+    // 갱신주기가 바뀔 때마다 호출되는 메서드
     @IBAction func onStepper(_ sender: UIStepper) {
         
         // 만약 sender 의 타입이 Any 일 경우
@@ -57,5 +59,20 @@ class ViewController: UIViewController {
         self.intervalText.text = "\(value)분 마다"
     }
     
+    // 화면 전환 및 데이터 전달
+    @IBAction func onSubmit(_ sender: Any) {
+        
+        // 넘겨줄 ViewController 인스턴스 생성
+        guard let uvc = self.storyboard?.instantiateViewController(withIdentifier: "RVC") as? ResultViewController else {
+        return
+        }
+        
+        // 값 전달
+        uvc.paramEmail = self.email.text! // 이메일
+        uvc.paramUpdate = self.isUpdate.isOn // 자동갱신 여부
+        uvc.paramInterval = self.interval.value // 갱신 주기
+        // 화면 이동
+        self.present(uvc, animated: true)
+    }
 }
 
