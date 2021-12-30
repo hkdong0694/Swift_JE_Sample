@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class ViewController: UIViewController {
 
     @IBOutlet var imageView: UIImageView!
     
@@ -16,6 +16,24 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         // Do any additional setup after loading the view.
     }
     
+
+
+    @IBAction func pick(_ sender: Any) {
+        // 이미지 피커 컨트롤러 인스턴스 생성
+        let picker = UIImagePickerController()
+        // 이미지 소스로 사진 라이브러리 선택
+        picker.sourceType = .photoLibrary
+        // 이미지 편집 기능 On
+        picker.allowsEditing = true
+        picker.delegate = self
+        
+        self.present(picker, animated: false)
+    }
+    
+}
+
+// MARK: - 이미지 파커 컨트롤러 델리게이트 메서드
+extension ViewController : UIImagePickerControllerDelegate {
     // 이미지 파커에서 이미지를 선택하지 않고 취소했을 때 호출되는 메서드
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         // 이미지 피커 컨트롤러 창 닫기
@@ -34,18 +52,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             self.imageView.image = img
         }
     }
-
-    @IBAction func pick(_ sender: Any) {
-        // 이미지 피커 컨트롤러 인스턴스 생성
-        let picker = UIImagePickerController()
-        // 이미지 소스로 사진 라이브러리 선택
-        picker.sourceType = .photoLibrary
-        // 이미지 편집 기능 On
-        picker.allowsEditing = true
-        picker.delegate = self
-        
-        self.present(picker, animated: false)
-    }
-    
 }
 
+// MARK: - 내비게이션 컨트롤러 델리게이트 메소드
+extension ViewController : UINavigationControllerDelegate {
+    
+}
