@@ -20,3 +20,5 @@
 - [SubmitValue-AppDelegate](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/SubmitValue-AppDelegate/SubmitValue-AppDelegate) : 저장소를 사용하여 값을 주고 받는 Sample Project
 
 ## Chapter 06 - 사용자에게 메시지를 전달하는 방법
+- [Msg-AlertController](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/Msg-AlertController/Msg-AlertController) : 알림창을 띄우는 Sample Project
+
