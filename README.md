@@ -24,3 +24,4 @@
 - [Msg-AlertControllerAuth](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/Msg-ControllerAuth/Msg-ControllerAuth) : 알림창을 통해 로그인 인증을 하는 Sample Project
 - [Msg-Notification](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/Msg-Notification/Msg-Notification) : 로컬 알림 기능 Sample Project
 
+## Chapter 07 - 델리게이트 패턴
