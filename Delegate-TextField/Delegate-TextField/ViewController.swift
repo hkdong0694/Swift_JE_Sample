@@ -56,9 +56,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         if Int(string) == nil {
             if (textField.text?.count)! + string.count > 10 {
                 return false
-            } else {                
-                return true
             }
+            return true
         } else {
             return false
         }
