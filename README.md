@@ -29,7 +29,7 @@
 - [Delegate-ImagePicker](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/Delegate-ImagePicker/Delegate-ImagePicker) : ImagePicker , Extension 을 이용한 Delegate Pattern 적용 Sample Project
 
 ## Chapter 08 - 테이블 뷰를 이용한 데이터 목록 구현
-
+- [MyMovieChart](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/MyMovieChart/MyMovieChart) : 프로토타입 셀을 이용한 테이블 뷰 실습 Sample Project
 
 
 
