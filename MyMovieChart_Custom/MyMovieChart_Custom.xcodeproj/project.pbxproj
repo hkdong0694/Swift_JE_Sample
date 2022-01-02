@@ -13,6 +13,8 @@
 		3213A13E2781846E00933754 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3213A13C2781846E00933754 /* Main.storyboard */; };
 		3213A1402781847000933754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3213A13F2781847000933754 /* Assets.xcassets */; };
 		3213A1432781847000933754 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3213A1412781847000933754 /* LaunchScreen.storyboard */; };
+		3213A14B2781850F00933754 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3213A14A2781850F00933754 /* ListViewController.swift */; };
+		3213A14D278185C200933754 /* MovieVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3213A14C278185C200933754 /* MovieVO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		3213A13F2781847000933754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3213A1422781847000933754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3213A1442781847000933754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3213A14A2781850F00933754 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		3213A14C278185C200933754 /* MovieVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				3213A13F2781847000933754 /* Assets.xcassets */,
 				3213A1412781847000933754 /* LaunchScreen.storyboard */,
 				3213A1442781847000933754 /* Info.plist */,
+				3213A14A2781850F00933754 /* ListViewController.swift */,
+				3213A14C278185C200933754 /* MovieVO.swift */,
 			);
 			path = MyMovieChart_Custom;
 			sourceTree = "<group>";
@@ -139,7 +145,9 @@
 			files = (
 				3213A13B2781846E00933754 /* ViewController.swift in Sources */,
 				3213A1372781846E00933754 /* AppDelegate.swift in Sources */,
+				3213A14B2781850F00933754 /* ListViewController.swift in Sources */,
 				3213A1392781846E00933754 /* SceneDelegate.swift in Sources */,
+				3213A14D278185C200933754 /* MovieVO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
