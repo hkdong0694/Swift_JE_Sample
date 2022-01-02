@@ -14,6 +14,7 @@
 		3213A11C27806D2300933754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3213A11B27806D2300933754 /* Assets.xcassets */; };
 		3213A11F27806D2300933754 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3213A11D27806D2300933754 /* LaunchScreen.storyboard */; };
 		3213A1272781749300933754 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3213A1262781749300933754 /* ListViewController.swift */; };
+		3213A1292781772800933754 /* MovieVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3213A1282781772800933754 /* MovieVO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		3213A11E27806D2300933754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3213A12027806D2300933754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3213A1262781749300933754 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		3213A1282781772800933754 /* MovieVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				3213A11D27806D2300933754 /* LaunchScreen.storyboard */,
 				3213A12027806D2300933754 /* Info.plist */,
 				3213A1262781749300933754 /* ListViewController.swift */,
+				3213A1282781772800933754 /* MovieVO.swift */,
 			);
 			path = MyMovieChart;
 			sourceTree = "<group>";
@@ -144,6 +147,7 @@
 				3213A11327806D2300933754 /* AppDelegate.swift in Sources */,
 				3213A1272781749300933754 /* ListViewController.swift in Sources */,
 				3213A11527806D2300933754 /* SceneDelegate.swift in Sources */,
+				3213A1292781772800933754 /* MovieVO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
