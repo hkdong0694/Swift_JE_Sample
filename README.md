@@ -30,8 +30,8 @@
 
 ## Chapter 08 - 테이블 뷰를 이용한 데이터 목록 구현
 - [MyMovieChart_Basic](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/MyMovieChart/MyMovieChart) : 프로토타입 셀 (Basic)을 이용한 테이블 뷰 실습 Sample Project
-- [MyMovieChart_Custom](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/MyMovieChart_Custom/MyMovieChart_Custom) : 프로토타입 셀(Custom)을 이용한 테이블 뷰 실습 Sample Project
-
+- [MyMovieChart_Custom](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/MyMovieChart_Custom/MyMovieChart_Custom) : 프로토타입 셀(Custom) Tag 방식을 이용한 테이블 뷰 실습 Sample Project
+- [MyMovieChart_Custom02](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/MyMovieChart_Custom02/MyMovieChart_Custom02) : 프로토타입 셀(Custom) Class 을 이용한 테이블 뷰 실습 Sample Project
 
 
 
