@@ -13,6 +13,12 @@
 		3213A16227818E4C00933754 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3213A16027818E4C00933754 /* Main.storyboard */; };
 		3213A16427818E4D00933754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3213A16327818E4D00933754 /* Assets.xcassets */; };
 		3213A16727818E4D00933754 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3213A16527818E4D00933754 /* LaunchScreen.storyboard */; };
+		3213A16F27818EF400933754 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3213A16E27818EF400933754 /* ListViewController.swift */; };
+		3213A17127818EFC00933754 /* MovieVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3213A17027818EFC00933754 /* MovieVO.swift */; };
+		3213A1732781912100933754 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3213A1722781912100933754 /* MovieCell.swift */; };
+		3213A179278193EE00933754 /* rain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3213A176278193ED00933754 /* rain.jpg */; };
+		3213A17A278193EE00933754 /* secret.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3213A177278193ED00933754 /* secret.jpg */; };
+		3213A17B278193EE00933754 /* darknight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3213A178278193ED00933754 /* darknight.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		3213A16327818E4D00933754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3213A16627818E4D00933754 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3213A16827818E4D00933754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3213A16E27818EF400933754 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		3213A17027818EFC00933754 /* MovieVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVO.swift; sourceTree = "<group>"; };
+		3213A1722781912100933754 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		3213A176278193ED00933754 /* rain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rain.jpg; sourceTree = "<group>"; };
+		3213A177278193ED00933754 /* secret.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = secret.jpg; sourceTree = "<group>"; };
+		3213A178278193ED00933754 /* darknight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darknight.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 		3213A15927818E4C00933754 /* MyMovieChart_Custom02 */ = {
 			isa = PBXGroup;
 			children = (
+				3213A1752781938800933754 /* Resource */,
 				3213A15A27818E4C00933754 /* AppDelegate.swift */,
 				3213A15C27818E4C00933754 /* SceneDelegate.swift */,
 				3213A15E27818E4C00933754 /* ViewController.swift */,
@@ -63,8 +76,21 @@
 				3213A16327818E4D00933754 /* Assets.xcassets */,
 				3213A16527818E4D00933754 /* LaunchScreen.storyboard */,
 				3213A16827818E4D00933754 /* Info.plist */,
+				3213A16E27818EF400933754 /* ListViewController.swift */,
+				3213A17027818EFC00933754 /* MovieVO.swift */,
+				3213A1722781912100933754 /* MovieCell.swift */,
 			);
 			path = MyMovieChart_Custom02;
+			sourceTree = "<group>";
+		};
+		3213A1752781938800933754 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3213A178278193ED00933754 /* darknight.jpg */,
+				3213A176278193ED00933754 /* rain.jpg */,
+				3213A177278193ED00933754 /* secret.jpg */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +150,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3213A17B278193EE00933754 /* darknight.jpg in Resources */,
 				3213A16727818E4D00933754 /* LaunchScreen.storyboard in Resources */,
+				3213A179278193EE00933754 /* rain.jpg in Resources */,
 				3213A16427818E4D00933754 /* Assets.xcassets in Resources */,
 				3213A16227818E4C00933754 /* Main.storyboard in Resources */,
+				3213A17A278193EE00933754 /* secret.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +168,10 @@
 			files = (
 				3213A15F27818E4C00933754 /* ViewController.swift in Sources */,
 				3213A15B27818E4C00933754 /* AppDelegate.swift in Sources */,
+				3213A1732781912100933754 /* MovieCell.swift in Sources */,
+				3213A16F27818EF400933754 /* ListViewController.swift in Sources */,
 				3213A15D27818E4C00933754 /* SceneDelegate.swift in Sources */,
+				3213A17127818EFC00933754 /* MovieVO.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
