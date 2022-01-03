@@ -54,7 +54,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cZ1-TN-rc5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1123.1884057971015" y="108.48214285714285"/>
+            <point key="canvasLocation" x="1080" y="108"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6Et-FS-9cO">
