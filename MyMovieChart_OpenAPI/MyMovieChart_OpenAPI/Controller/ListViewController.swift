@@ -9,32 +9,24 @@ import UIKit
 
 class ListViewController : UITableViewController {
     
-//    var dataset = [
-//        ("다크 나이트", "영웅물에 철학에 음악까지 더해져 예술이 되다", "2008-09-04", 8.95, "darknight.jpg"),
-//        ("호우시절", "때를 알고 내리는 좋은 비", "2009-10-15", 7.31, "rain.jpg"),
-//        ("말할 수 없는 비밀", "여기서 너까지 다섯 걸음", "2010-05-07", 9.91, "secret.jpg")
-//    ]
+    @IBOutlet var moreBtn: UIButton!
     
     lazy var list : [MovieVO] = {
-        
         var dataList = [MovieVO]()
-        
-        // for(title, desc, openDate, rating, thumbnail) in self.dataset {
-        //     let mvo = MovieVO()
-        //     mvo.title = title
-        //     mvo.description = desc
-        //     mvo.opendate = openDate
-        //     mvo.rating = rating
-        //     mvo.thumbnail = thumbnail
-        //     dataList.append(mvo)
-        // }
         return dataList
     }()
-    
+    // 현재까지 읽어온 데이터의 페이지 정보
+    var page = 1
     
     override func viewDidLoad() {
+        
+        self.callMovieAPI()
+        
+    }
+    
+    func callMovieAPI() {
         // 호핀 API 호출을 위한 URI 생성
-        let url = "http://swiftapi.rubypaper.co.kr:2029/hoppin/movies?version=1&page=1&count=10&genreId=&order=releasedateasc"
+        let url = "http://swiftapi.rubypaper.co.kr:2029/hoppin/movies?version=1&page=\(self.page)&count=10&genreId=&order=releasedateasc"
         let apiUri: URL! = URL(string: url)
         
         // REST API을 호출
@@ -50,6 +42,10 @@ class ListViewController : UITableViewController {
             
             // 데이터 구조에 따라 차례대로 캐스팅하며 읽어온다.
             let hoppin = apiDictionary["hoppin"] as! NSDictionary
+            
+            let totalCount = (hoppin["totalCount"] as? NSString)!.integerValue
+        
+            
             let movies = hoppin["movies"] as! NSDictionary
             let movie = movies["movie"] as! NSArray
             
@@ -69,15 +65,26 @@ class ListViewController : UITableViewController {
                 // list 배열에 추가
                 self.list.append(mvo)
                 
+                if(self.list.count >= totalCount) {
+                    self.moreBtn.isHidden = true
+                }
+                
             }
             
         } catch {
             
         }
-        
-        
     }
     
+    @IBAction func more(_ sender: Any) {
+        self.page += 1
+        
+        
+        self.callMovieAPI()
+        
+        self.tableView.reloadData()
+        
+    }
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         self.list.count
     }
@@ -91,7 +98,15 @@ class ListViewController : UITableViewController {
         cell.desc?.text = row.description
         cell.opendate?.text = row.opendate
         cell.rating?.text = "\(row.rating!)"
-        cell.thumnail.image = UIImage(named: row.thumbnail!)
+        
+        // 섬네일 경로를 인자값으로 하는 URL 객체를 생성
+        let url : URL! = URL(string: row.thumbnail!)
+        
+        // 이미지를 읽어와 Data 객체에 저장
+        let imageData = try! Data(contentsOf: url)
+        
+        // UIImage 객체를 생성하여 아울렛 변수의 image 속성에 대입
+        cell.thumnail.image = UIImage(data: imageData)
         
         return cell
     }
