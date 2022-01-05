@@ -1,5 +1,5 @@
 # Swift_JE_Sample
-꼼꼼한 재은씨의 Swift 책 Sample Code 저장소
+꼼꼼한 재은씨의 Swift 책 Sample Code 저장소 ( 기본편 )
 
 
 ## Chapter 03 - 화면상의 객체를 제어하는 방법
@@ -35,8 +35,9 @@
 - [Table_CellHeight](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/Table_CellHeight/Table_CellHeight) : Table View 의 행의 높이를 결정하는 방식 Sample Project
 
 ## Chapter 09 - 네트워크 통신과 API 
+- [MyMovieChart_OpenAPI](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/MyMovieChart_OpenAPI/MyMovieChart_OpenAPI) : OpenAPI 를 통한 네트워크 통신 Sample Project
 
-
+## Chapter 10 - 테이블 뷰의 동작원리
 
 
 
