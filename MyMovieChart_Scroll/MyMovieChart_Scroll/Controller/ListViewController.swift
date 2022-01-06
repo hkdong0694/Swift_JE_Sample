@@ -33,10 +33,7 @@ class ListViewController : UITableViewController {
             
             // 데이터 구조에 따라 차례대로 캐스팅하며 읽어온다.
             let hoppin = apiDictionary["hoppin"] as! NSDictionary
-            
-            // let totalCount = (hoppin["totalCount"] as? NSString)!.integerValue
-        
-            
+                        
             let movies = hoppin["movies"] as! NSDictionary
             let movie = movies["movie"] as! NSArray
             
@@ -52,6 +49,13 @@ class ListViewController : UITableViewController {
                 mvo.thumbnail = r["thumbnailImage"] as? String
                 mvo.detail = r["linkUrl"] as? String
                 mvo.rating = ((r["ratingAverage"] as! NSString).doubleValue)
+                
+                // 섬네일 경로를 인자값으로 하는 URL 객체를 생성
+                let url : URL! = URL(string: mvo.thumbnail!)
+                
+                // 이미지를 읽어와 Data 객체에 저장
+                let imageData = try! Data(contentsOf: url)
+                mvo.thumbnailImage = UIImage(data: imageData)
                 
                 // list 배열에 추가
                 self.list.append(mvo)
@@ -82,14 +86,10 @@ class ListViewController : UITableViewController {
         cell.opendate?.text = row.opendate
         cell.rating?.text = "\(row.rating!)"
         
-        // 섬네일 경로를 인자값으로 하는 URL 객체를 생성
-        let url : URL! = URL(string: row.thumbnail!)
-        
-        // 이미지를 읽어와 Data 객체에 저장
-        let imageData = try! Data(contentsOf: url)
-        
-        // UIImage 객체를 생성하여 아울렛 변수의 image 속성에 대입
-        cell.thumbnail.image = UIImage(data: imageData)
+        // 비동기 방식으로 섬네일 이미지를 읽어온다.
+        DispatchQueue.main.async {
+            cell.thumbnail.image = self.getThumbnailImage(indexPath.row)
+        }
         
         NSLog("제목 : \(row.title!), 호출된 행번호 : \(indexPath.row)")
         
@@ -98,6 +98,22 @@ class ListViewController : UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // Click Event
+    }
+    
+    func getThumbnailImage(_ index: Int) -> UIImage {
+        
+        let mvo = self.list[index]
+        
+        if let savedImage = mvo.thumbnailImage {
+            return savedImage
+        } else {
+            let url: URL! = URL(string: mvo.thumbnail!)
+            let imageData = try! Data(contentsOf: url)
+            mvo.thumbnailImage = UIImage(data: imageData)
+            
+            return mvo.thumbnailImage!
+        }
+        
     }
     
     
