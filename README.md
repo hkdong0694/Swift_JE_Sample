@@ -38,6 +38,7 @@
 - [MyMovieChart_OpenAPI](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/MyMovieChart_OpenAPI/MyMovieChart_OpenAPI) : OpenAPI 를 통한 네트워크 통신 Sample Project
 
 ## Chapter 10 - 테이블 뷰의 동작원리
+- [MyMovieChart_Scroll](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/MyMovieChart_Scroll/MyMovieChart_Scroll) : TableView 에서 Scroll 시 재사용하는 Sample Project
 
 
 
