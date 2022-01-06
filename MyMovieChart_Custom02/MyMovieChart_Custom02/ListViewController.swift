@@ -43,7 +43,6 @@ class ListViewController : UITableViewController {
         let row = list[indexPath.row]
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "ListCell") as! MovieCell
-        
         cell.title?.text = row.title
         cell.desc?.text = row.description
         cell.opendate?.text = row.opendate
