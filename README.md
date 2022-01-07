@@ -42,6 +42,6 @@
 - [MyMovieChart_SpinOff](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/MyMovieChart_SpinOff/MyMovieChart_SpinOff) : 일반 뷰 컨트롤러에서 테이블 뷰 사용하는 Sample Project
 
 ## Chapter 11 - 앱에서 웹 페이지를 여는 방법 ( WebView )
-
+- [MyMovieChart_WebView](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/MyMovieChart_WebView/MyMovieChart_WebView) : 상세 페이지로 이동하는 웹페이지 ( WebView ) 연결하는 Sample Project
 
 
