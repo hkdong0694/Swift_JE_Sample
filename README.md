@@ -48,4 +48,8 @@
 - [MyMovieChart_TabBar](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/MyMovieChart_Tabbar/MyMovieChart_Tabbar) : 탭 바 컨트롤러를 통해 화면 제어 Sample Project
 
 ## Chapter 13 - 맵킷 프레임워크 사용하기
+- [MyMovieChart_MapKit](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/MyMovieChart_MapKit/MyMovieChart_MapKit) : 맵킷 프레임워크를 이용한 Sample. Project
+
+## Chapter 14 - 오토 레이아웃
+
 
