@@ -45,3 +45,7 @@
 - [MyMovieChart_WebView](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/MyMovieChart_WebView/MyMovieChart_WebView) : 상세 페이지로 이동하는 웹페이지 ( WebView ) 연결하는 Sample Project
 
 ## Chapter 12 - 탭 바 컨트롤러
+- [MyMovieChart_TabBar](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/MyMovieChart_Tabbar/MyMovieChart_Tabbar) : 탭 바 컨트롤러를 통해 화면 제어 Sample Project
+
+## Chapter 13 - 맵킷 프레임워크 사용하기
+
