@@ -52,4 +52,6 @@
 
 ## Chapter 14 - 오토 레이아웃
 - [AutoResizing_Pratice](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/AutoResizing_Pratice/AutoResizing_Pratice) : AutoResizing 을 적용한 화면 Sample Project
+- [AutoLayout_Pratice](https://github.com/hkdong0694/Swift_JE_Sample/tree/master/AutoLayout_Pratice/AutoLayout_Pratice) : AutoLayout 을 적용한 화면 Sample Project
+
 
